@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Relógio</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <main>
+      <div id="clock">
+        <span id="hour"></span>:<span id="min"></span>:<span id="sec"></span>
+      </div>
+      <div>
+        <label for="timezone">Fuso horário:</label>
+        <select id="timezone">
+          <option value="-12">UTC-12:00</option>
+          <option value="-11">UTC-11:00</option>
+          <option value="-10">UTC-10:00</option>
+          <option value="-9">UTC-09:00</option>
+          <option value="-8">UTC-08:00</option>
+          <option value="-7">UTC-07:00</option>
+          <option value="-6">UTC-06:00</option>
+          <option value="-5">UTC-05:00</option>
+          <option value="-4">UTC-04:00</option>
+          <option value="-3">UTC-03:00</option>
+          <option value="-2">UTC-02:00</option>
+          <option value="-1">UTC-01:00</option>
+          <option value="0" selected>UTC+00:00</option>
+          <option value="1">UTC+01:00</option>
+          <option value="2">UTC+02:00</option>
+          <option value="3">UTC+03:00</option>
+          <option value="4">UTC+04:00</option>
+          <option value="5">UTC+05:00</option>
+          <option value="6">UTC+06:00</option>
+          <option value="7">UTC+07:00</option>
+          <option value="8">UTC+08:00</option>
+          <option value="9">UTC+09:00</option>
+          <option value="10">UTC+10:00</option>
+          <option value="11">UTC+11:00</option>
+          <option value="12">UTC+12:00</option>
+        </select>
+      </div>
+
+      <div id="clockTimer">
+        <span id="hourTimer"></span>:<span id="minTimer"></span>:<span id="secTimer"></span>
+      </div>
+      <div>
+        <button onclick="startTimer()">Start</button>
+        <button onclick="pauseTimer()">Pause</button>
+        <button onclick="resetTimer()">Reset</button>
+      </div>
+      <div>
+        <input type="number" id="inputHour" min="0" max="24" placeholder="hours">
+        <input type="number" id="inputMin" min="0" max="60" placeholder="minutes">
+        <input type="number" id="inputSec" min="0" max="60" placeholder="seconds">
+        <button onclick="setTimer()">Set</button>
+      </div>
+    </main>
+    <script src="scipt.js"></script>
+    <script src="sciptTimer.js"></script>
+  </body>
+</html>

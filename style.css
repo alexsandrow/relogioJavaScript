@@ -1,0 +1,84 @@
+body {
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  #clock {
+    font-size: 3rem;
+    margin-top: 2rem;
+  }
+  
+  #clockTimer {
+    font-size: 3rem;
+    margin-top: 2rem;
+  }
+  
+  #controls {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  button {
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: #3b3b3b;
+    color: #f8f8f8;
+    cursor: pointer;
+    border: none;
+  }
+  
+  button:hover {
+    background-color: #505050;
+  }
+  
+  #timer-input {
+    margin-top: 2rem;
+    font-size: 2rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    text-align: center;
+    width: 10rem;
+    margin-bottom: 1rem;
+  }
+  
+  #timer-controls {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #timer-controls button {
+    font-size: 1.2rem;
+    margin: 0 0.5rem;
+    padding: 0.3rem 0.5rem;
+  }
+  
+  #alarm-input {
+    margin-top: 2rem;
+    font-size: 2rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    text-align: center;
+    width: 10rem;
+    margin-bottom: 1rem;
+  }
+  
+  #alarm-controls {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #alarm-controls button {
+    font-size: 1.2rem;
+    margin: 0 0.5rem;
+    padding: 0.3rem 0.5rem;
+  }
+  
+  .hidden {
+    display: none;
+  }
